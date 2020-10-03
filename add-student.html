@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Add Student Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        div {
+            font-family: "Lucida Sans";
+            font-style: normal;
+            padding-top: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form_data">
+        <label>STUDENT ID :</label>
+        <br />
+        <input type="text" id="id" required />
+        <br />
+        <br />
+        <label>STUDENT NAME :</label>
+        <br />
+        <input type="text" id="name" required />
+        <br />
+        <div>
+
+            <div>
+            <label for="radio">
+                GENDER
+                <br />
+                <input type="radio" id="male" value="Male" onclick="myFunction(this.value)" required />Male
+                <br />
+                <input type="radio"  id="female" value="Female" onclick="myFunction(this.value)"
+                    required />female
+            </label>
+            <br />
+            </div>
+
+            <div>
+                <label>DATE OF BIRTH</label>
+                <label for="start"></label>
+                <br />
+                <input type="date"  id="date" min="" max="" required />
+            </div>
+
+            <div>
+                <label>CITY:</label>
+                <br />
+                <input type="text" id="city" required />
+            </div>
+
+            <div>
+                <label>State:</label>
+                <br />
+                <input type="text" id="state" required />
+            </div>
+
+            <div>
+                <label for="mail">Email:</label>
+                <br />
+
+                <input type="text" id="mail" required /><br />
+            </div>
+
+            <div>
+                <label>
+                    Qualification:
+                </label>
+                <br />
+                <input type="text" id="qua" required /><br />
+            </div>
+
+            <div>
+                <label>Stream:</label><br />
+                <input type="text" id="stream" required /><br />
+            </div>
+
+            <input type="submit" onClick="fun()" />
+            
+            <input   type="button" onClick="change()" value="Back to menu" />
+        </div>
+    </form>
+</body>
+
+
+<script src="./scripts/script1.js"></script>
+
+</html>

@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+    <title>Student Record</title>
+
+</head>
+
+<body>
+    <div>
+
+        <h2>Search by ID</h2>
+
+
+        <input type="text" size="5" id="stuId" />
+
+        <input type="submit" value="Search" onclick="search()" />
+
+
+    </div>
+
+    <div>
+
+        <h2>Student</h2>
+        <h1 id="0"></h1>
+        <table id="student_table" hidden="true" cellpadding="2" cellspacing="2" border="1" width="400px">
+
+            <tr>
+
+                <th style="background-color: white; color: black">ID</th>
+                <td id="ID"></td>
+            </tr>
+
+            <tr>
+                <th style="background-color: white; color: black">Student Name</th>
+                <td id="name"></td>
+            </tr>
+
+            <tr>
+                <th style="background-color: white; color: black">Gender</th>
+                <td id="gender"></td>
+            </tr>
+
+            <tr>
+                <th style="background-color: white; color: black">DateOfBirth</th>
+                <td id="DOB"></td>
+            </tr>
+
+            <tr>
+                <th style="background-color:white; color: black">City</th>
+                <td id="city"></td>
+            </tr>
+
+            <tr>
+
+                <th style="background-color: white; color: black">state</th>
+                <td id="state"></td>
+            </tr>
+
+            <tr>
+
+                <th style="background-color: white; color: black">EmailId</th>
+                <td id="emailid"></td>
+            </tr>
+
+            <tr>
+                <th style="background-color: white; color: black">Qualification</th>
+                <td id="qua"></td>
+            </tr>
+
+            <tr>
+                <th style="background-color: white; color: black">Stream</th>
+                <td id="stream"></td>
+            </tr>
+
+
+
+
+        </table>
+        <input type="button" onClick="change()" value="Back to menu" />
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./scripts/script2.js"></script>
+
+</body>
+
+</html>
